@@ -1,0 +1,414 @@
+
+body {
+    background-color: azure;
+    opacity: 0.9;
+  }
+  .heading1 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  h1 {
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 1%;
+    border-bottom:5px solid #a363aa;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-transform: uppercase;
+  }
+  
+  
+  form {
+    margin: 0 auto;
+    background-color: #fff;
+    width: 40%;
+    padding: 4px 50px;
+    padding-top: 40px;
+    background: linear-gradient(2deg, #ff994f, #fa6d86);
+    padding-bottom: 200px;
+    border-radius: 8px;
+  }
+  .mainDiv {
+    /* border: 3px solid red; */
+    display: flex;
+    flex: 1;
+  }
+  /* firstName + lastName div as a parent */
+  .nameDiv {
+    /* border: 2px solid green; */
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+  }
+  .fullName {
+    /* border: 2px dotted goldenrod; */
+    display: flex;
+    flex: 4;
+    justify-content: space-between;
+  }
+  .firstDiv {
+    /* border: 2px solid green; */
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+  }
+  .secondDiv {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    flex: 4;
+  }
+  
+  /* Class Attributes */
+  .input {
+    width: 100%;
+    height: 27px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(232, 232, 232);
+    border-radius: 50px;
+    border: none;
+  }
+  .input:focus {
+    border: 2px solid #4f87ff !important;
+    /* border-radius: 2px ; */
+  }
+  .firstName,
+  .lastName {
+    background-color: rgb(232, 232, 232);
+    width: 33%;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    color: #666;
+    height: 27px;
+    font-size: 15px;
+  }
+  #code_area,
+  #choose_area {
+    font-size: 15px;
+    height: 24px;
+  
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+  }
+  #code_area {
+    height: 30px;
+    background-color: rgb(232, 232, 232);
+  }
+  .label {
+    font-size: 20px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: 400;
+  }
+  .radio_buttons {
+    margin-left: 45px;
+    font-weight: 500;
+  }
+  textarea {
+    height: 30px;
+    width: 77%;
+    padding-top: 15px;
+    border-radius: 20px;
+    display: block;
+    /* margin-left: 0em; */
+    color: #666;
+    background-color: rgb(232, 232, 232);
+    margin-top: 3px;
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 3px;
+    border-radius: 50px;
+    background: linear-gradient(2deg, #1561b8, #fa6d86);
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 1600px) {
+    .heading1 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    h1 {
+      margin-left: 0;
+      font-size: 190%;
+      border-bottom: 3px solid #a363aa;
+      margin-bottom: 2%;
+    }
+    .mainDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .fullName {
+      display: flex;
+      flex-direction: column;
+      /* border: 2px solid blueviolet; */
+      width: 100%;
+    }
+    .firstName,
+    .lastName {
+      width: 100%;
+      margin-bottom: 3%;
+    }
+    
+    form {
+      width: 57%;
+      padding: 5%;
+    }
+    .mainDiv{
+      /* border: 2px solid green; */
+      width: 100%;
+    }
+    .firstDiv{
+      width: 1%;
+    }
+    .label{
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .heading1 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    h1 {
+      margin-left: 0;
+      font-size: 180%;
+      border-bottom: 3px solid #a363aa;
+      margin-bottom: 2%;
+    }
+    .mainDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .fullName {
+      display: flex;
+      flex-direction: column;
+      /* border: 2px solid blueviolet; */
+      width: 100%;
+    }
+    .firstName,
+    .lastName {
+      width: 100%;
+      margin-bottom: 3%;
+    }
+    
+    form {
+      width: 65%;
+      padding: 4%;
+    }
+    .mainDiv{
+      /* border: 2px solid green; */
+      width: 100%;
+    }
+    .firstDiv{
+      width: 1%;
+    }
+    .label{
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .heading1 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      
+    }
+  
+    h1 {
+      margin-left: 0;
+      font-size: 170%;
+      border-bottom: 3px solid #a363aa;
+      margin-bottom: 2%;
+    }
+    .mainDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .fullName {
+      display: flex;
+      flex-direction: column;
+      /* border: 2px solid blueviolet; */
+      width: 100%;
+    }
+    .firstName,
+    .lastName {
+      width: 100%;
+      margin-bottom: 3%;
+    }
+    
+    form {
+      width: 78%;
+      padding: 10%;
+    }
+    .mainDiv{
+      /* border: 2px solid green; */
+      width: 100%;
+    }
+    .firstDiv{
+      width: 1%;
+    }
+    .label{
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .heading1 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    h1 {
+      margin-left: 0;
+      font-size: 153%;
+      border-bottom: 3px solid #a363aa;
+      margin-bottom: 2%;
+    }
+    .mainDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .fullName {
+      display: flex;
+      flex-direction: column;
+      /* border: 2px solid blueviolet; */
+      width: 100%;
+    }
+    .firstName,
+    .lastName {
+      width: 100%;
+      margin-bottom: 3%;
+    }
+    form {
+      width: 78%;
+      padding: 10%;
+    }
+    .mainDiv{
+      /* border: 2px solid green; */
+      width: 100%;
+    }
+    .firstDiv{
+      width: 1%;
+    }
+    .label{
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .heading1 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    h1 {
+      margin-left: 0;
+      font-size: 126%;
+      border-bottom: 3px solid #a363aa;
+      margin-bottom: 2%;
+    }
+    .mainDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .fullName {
+      display: flex;
+      flex-direction: column;
+      /* border: 2px solid blueviolet; */
+      width: 100%;
+    }
+    .firstName,
+    .lastName {
+      width: 100%;
+      margin-bottom: 3%;
+    }
+    /* .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    } */
+    form {
+      width: 78%;
+      padding: 10%;
+    }
+    .mainDiv{
+      /* border: 2px solid green; */
+      width: 100%;
+    }
+    .firstDiv{
+      width: 1%;
+    }
+    .label{
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .heading1 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      
+    }
+  
+    h1 {
+      margin-left: 0;
+      font-size: 1rem;
+      border-bottom: 3px solid #a363aa;
+      margin-bottom: 2%;
+    }
+    .mainDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .fullName {
+      display: flex;
+      flex-direction: column;
+      /* border: 2px solid blueviolet; */
+      width: 100%;
+    }
+    .firstName,
+    .lastName {
+      width: 100%;
+      margin-bottom: 3%;
+    }
+    
+    form {
+      width: 78%;
+      padding: 10%;
+    }
+    .mainDiv{
+      /* border: 2px solid green; */
+      width: 100%;
+    }
+    .firstDiv{
+      width: 1%;
+    }
+    .label{
+      width: 100%;
+    }
+  }
+  
