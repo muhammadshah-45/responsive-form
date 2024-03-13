@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Registration Form</title>
+</head>
+<body>
+    <div class="heading1">
+        <h1> Registration Form</h1>
+    </div>
+ <div class="container">
+     
+     <form action="https://api.web3forms.com/submit" method="POST">
+         <div class="mainDiv">
+             <div class="nameDiv">
+                 <label  class="label" >Name:</label>
+                </div>
+                <div class="fullName">
+                    <input type="hidden" name="access_key" value="5254c1c2-9a72-47c3-9790-a903bfbeaf38">
+                    <input type="text" placeholder="First Name" class="firstName" required>
+                    <input type="text"placeholder="Last Name" class="lastName" required>
+                </div>
+            </div> 
+            <br>  
+              <div class="mainDiv">
+                <div class="firstDiv">
+                    <label  class="label" >Company:</label>
+                </div>
+                <div class="secondDiv">
+                    <input type="text" placeholder="Company Name" class="input" id="input_ids" required>
+                </div>
+            </div> 
+            <br>  
+            <div class="mainDiv">
+                <div class="firstDiv">
+                    <label  class="label">Email:</label>
+                </div>
+                <div class="secondDiv">
+                    <input type="email" placeholder="example@email.com" class="input" id="inputs_ids" required>
+                </div>
+            </div>
+            <br>
+            <div class="mainDiv">
+                <div class="firstDiv">
+                    <label class="label">Phone:</label>
+                </div>
+                <div class="secondDiv">
+                    <select class="code_area" id="code_area"  >
+                        <option value="" selected>area code</option>
+                        <option value="">+1</option>
+                        <option value="">+93</option>
+                        <option value="">+91</option>
+                        <option value="">+234</option>
+                        <option value="">+92</option>
+                        <option value="">+54</option>
+                        <option value="">+89</option>
+                        <option value="">+251</option>
+                    </select>
+               
+                 <input type="text" placeholder="phone number" class="input" id="input_ids" minlength="10" maxlength="10" required>
+                </div>
+             </div> 
+            <br>
+            <div class="mainDiv">
+                <div class="firstDiv">
+                    <label  class="label">Subject:</label>
+                </div>
+                <div class="secondDiv">
+                    <select class="input" id="choose_area" >
+                        <option selected  >Choose Option</option>
+                        <option>Pak Study</option>
+                        <option value="">Mathematics</option>
+                        <option value="">Computer Science</option>
+                        <option value="">Biology</option>
+                        <option value="">Physics</option>
+                        <option value="">Chemistry</option>
+                        <option value="">English</option>
+                        <option >Urdu</option>
+                    </select>
+                </div> 
+                </div>
+                <br>
+                    <div class="mainDiv">
+                <div class="firstDiv">
+                    <label class="label" for="choise">Are you gender?</label>
+                    <input type="radio" class="radio_buttons" name="yes" id="input_ids">Yes
+                    <input type="radio" class="radio_buttons" name="yes" id="input_ids">No
+                    </div>
+                    </div>
+                    <br>
+                    <div class="text_div">
+                        
+                        <label for="" class="label"><em> Leave Your Message:</em></label>
+                        <textarea name="message" placeholder="Your Message" class="contact_inputs" required>send your message..</textarea>
+                    </div>
+                    <div class="firstDiv">
+                        <button type="submit">Register</button>
+                    </div>    
+                    
+                </div>
+                </form>
+</body>
+</html>
